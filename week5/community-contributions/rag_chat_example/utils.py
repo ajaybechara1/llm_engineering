@@ -25,7 +25,7 @@ load_dotenv(dotenv_path=env_path)
 
 class Rag(Enum):
 
-    GPT_MODEL = "gpt-4o-mini"
+    GPT_MODEL = "gpt-5-nano"
     HUG_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
     EMBED_MODEL = OpenAIEmbeddings()
     DB_NAME = "vector_db"

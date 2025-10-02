@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 load_dotenv()
 
 openai_api = os.getenv("OPENAI_API_KEY")
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-5-nano"
 openai = OpenAI()
 
 system_prompt = """You are a medical assistant that processes prescription text.
@@ -75,7 +75,7 @@ def clean_json_string(json_str):
         return None
 
 def preprocess_extracted_text(extracted_text):
-    """Calls GPT-4o-mini to process prescription text into structured JSON."""
+    """Calls gpt-5-nano to process prescription text into structured JSON."""
     try:
         response = openai.chat.completions.create(
             model=MODEL,

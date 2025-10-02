@@ -302,7 +302,7 @@ class TradingDecisionEngine:
             """
             
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": "You are an expert financial analyst providing professional trading recommendations."},
                     {"role": "user", "content": prompt}

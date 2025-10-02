@@ -154,7 +154,7 @@ Sector: {basic_info.get('sector', 'N/A')}
 User Question: {user_input}"""
             
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": system_msg},
                     {"role": "user", "content": user_msg}
@@ -259,7 +259,7 @@ User Question: {user_input}"""
         
         # Generate final response
         final_response = self.client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-nano",
             messages=[
                 {"role": "system", "content": "Provide a concise, professional response based on the tool results. Focus on actionable insights."},
                 {"role": "user", "content": f"Question: {user_input}\n\nTool Results: {' | '.join(tool_results)}"}

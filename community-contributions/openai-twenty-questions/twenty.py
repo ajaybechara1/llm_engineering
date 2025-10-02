@@ -5,8 +5,8 @@ import time
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 # openai.api_key = "<<Your Open AI Key here>>"
 
-# Models: You can use "gpt-4o", "gpt-4-turbo", or "gpt-3.5-turbo" — but we'll use "gpt-4o" or "gpt-4o-mini" for both players
-MODEL = "gpt-4o-mini"
+# Models: You can use "gpt-4o", "gpt-4-turbo", or "gpt-3.5-turbo" — but we'll use "gpt-4o" or "gpt-5-nano" for both players
+MODEL = "gpt-5-nano"
 
 def call_chatgpt(messages):
     response = openai.ChatCompletion.create(

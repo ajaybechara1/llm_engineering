@@ -118,7 +118,7 @@ class JSWebsiteSummarizer:
     def __summarize(self):
         self.website_scrapper.parse()
         chat_config = self.__messages_for(self.website_scrapper.get_title(), self.website_scrapper.get_text())
-        response = self.openai.chat.completions.create(model="gpt-4o-mini", messages=chat_config)
+        response = self.openai.chat.completions.create(model="gpt-5-nano", messages=chat_config)
         return response.choices[0].message.content
 
     def display_summary(self):

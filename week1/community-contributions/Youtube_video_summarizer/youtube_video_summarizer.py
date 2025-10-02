@@ -90,7 +90,7 @@ def get_openai_client():
     return OpenAI(api_key=api_key)
 
 #count tokens
-def count_tokens(text, model="gpt-4o-mini"):
+def count_tokens(text, model="gpt-5-nano"):
     """Count tokens in text using tiktoken with fallback"""
     try:
         # Try model-specific encoding first
@@ -107,10 +107,10 @@ def count_tokens(text, model="gpt-4o-mini"):
         return len(text.split()) * 1.3  # Rough word-to-token ratio
 
 
-def get_optimal_chunk_size(model="gpt-4o-mini"):
+def get_optimal_chunk_size(model="gpt-5-nano"):
     """Calculate optimal chunk size based on model's context window"""
     model_limits = {
-        "gpt-4o-mini": 8192,
+        "gpt-5-nano": 8192,
         "gpt-4o": 128000,
         "gpt-4-turbo": 128000,
         "gpt-3.5-turbo": 4096,
@@ -132,7 +132,7 @@ def get_optimal_chunk_size(model="gpt-4o-mini"):
     return max(optimal_chunk_size, 2000)
 
 #chunk transcript
-def chunk_transcript(transcript, max_tokens=4000, overlap_tokens=200, model="gpt-4o-mini"):
+def chunk_transcript(transcript, max_tokens=4000, overlap_tokens=200, model="gpt-5-nano"):
     """
     Split transcript into chunks that fit within token limits
     
@@ -291,7 +291,7 @@ def summarize_single_chunk(website, client):
     
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-nano",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -324,7 +324,7 @@ def summarize_with_chunking(website, client, max_chunk_tokens=4000):
         
         try:
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
@@ -344,7 +344,7 @@ def summarize_with_chunking(website, client, max_chunk_tokens=4000):
     
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5-nano",
             messages=[
                 {"role": "system", "content": "You are an expert at combining multiple summaries into a cohesive, comprehensive summary."},
                 {"role": "user", "content": stitching_prompt}

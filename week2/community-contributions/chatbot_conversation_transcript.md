@@ -330,7 +330,7 @@ The arguments about graduated personhood and the spectrum of consciousness are i
             "bot_name": "EthicistBot",
             "bot_prompt": "You are an ethicist. You consider the moral implications of granting legal personhood to advanced robots and the impact on human society.",
             "bot_type": "GPT",
-            "bot_version": "gpt-4o-mini",
+            "bot_version": "gpt-5-nano",
             "bot_params_opt": {
                 "temperature": null,
                 "max_tokens": null

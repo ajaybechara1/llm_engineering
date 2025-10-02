@@ -93,7 +93,7 @@ With a strong foundation in Machine Learning, Deep Learning, and High-Performanc
 
 ## Academic, Independent and Other Projects
 
-- **LLM-Powered Multimodal Airline Chatbot**: Built a chatbot with GPT-4o-mini, supporting both text and voice, generating pop-art city images. Stack: Python, Gradio, custom tools.
+- **LLM-Powered Multimodal Airline Chatbot**: Built a chatbot with gpt-5-nano, supporting both text and voice, generating pop-art city images. Stack: Python, Gradio, custom tools.
 - **Future Stock Price Prediction for MAANG**: Used yfinance, Stateful LSTM vs XGBoost. LSTM outperformed with ~0.02 MAE.
 - **Duplicate Question Detection**: LSTM Siamese Network with Word2Vec and GloVe. GloVe performed better.
 - **Music Genre Classification**: Used MFCCs and spectral features. Best result: 76% ± 3% accuracy with SVM.

@@ -189,7 +189,7 @@ class LlmSummarizer:
         messages: List[Dict[str, str]] = self.messages_for(website)
         try:
             response: ChatCompletion = self.openai.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=messages,
                 temperature=0.2,
                 max_tokens=512,

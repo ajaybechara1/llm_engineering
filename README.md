@@ -53,7 +53,7 @@ Any time that we have code like:
 `openai = OpenAI()`  
 You can use this as a direct replacement:  
 `openai = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')`  
-And also replace model names like **gpt-4o-mini** with **llama3.2**.  
+And also replace model names like **gpt-5-nano** with **llama3.2**.  
 For week 1 day 1, you can find this in week1/solutions/day1_with_ollama.ipynb.
 
 Below is a full example:
@@ -102,7 +102,7 @@ The colab links are in the Week folders and also here:
 You can keep your API spend very low throughout this course; you can monitor spend at the dashboards: [here](https://platform.openai.com/usage) for OpenAI, [here](https://console.anthropic.com/settings/cost) for Anthropic and [here](https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/cost) for Google Gemini.
 
 The charges for the exercsies in this course should always be quite low, but if you'd prefer to keep them minimal, then be sure to always choose the cheapest versions of models:
-1. For OpenAI: Always use model `gpt-4o-mini` in the code instead of `gpt-4o`
+1. For OpenAI: Always use model `gpt-5-nano` in the code instead of `gpt-4o`
 2. For Anthropic: Always use model `claude-3-haiku-20240307` in the code instead of the other Claude models
 3. During week 7, look out for my instructions for using the cheaper dataset
 

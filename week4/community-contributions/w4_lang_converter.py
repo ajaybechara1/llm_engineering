@@ -256,7 +256,7 @@ def launch_ui():
             converted_box = gr.Textbox(label="Converted Code:", lines=10)
         with gr.Row():
             model_dropdown = gr.Dropdown(
-                ["GPT: gpt-4o", "GPT: gpt-4o-mini", "CLAUDE: claude-3-5-sonnet-20240620", "CLAUDE: claude-3-haiku-20240307", "HF: CodeQwen1.5-7B-Chat", "HF: bigcode/starcoder"],
+                ["GPT: gpt-4o", "GPT: gpt-5-nano", "CLAUDE: claude-3-5-sonnet-20240620", "CLAUDE: claude-3-haiku-20240307", "HF: CodeQwen1.5-7B-Chat", "HF: bigcode/starcoder"],
                 label="Select Model",
                 value="GPT: gpt-4o"
             )

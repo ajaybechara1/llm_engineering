@@ -61,7 +61,7 @@ def messages_for(website):
 def summarize(url):
     website = Website(url)
     response = openai.chat.completions.create(
-        model = "gpt-4o-mini",
+        model = "gpt-5-nano",
         messages = messages_for(website)
     )
     return response.choices[0].message.content

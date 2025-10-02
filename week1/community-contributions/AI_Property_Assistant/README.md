@@ -1,6 +1,6 @@
 # AI Property Rental Assistant
 
-A Python tool that scrapes UK property rental listings and uses OpenAI's GPT-4o-mini to provide personalized property recommendations based on your requirements.
+A Python tool that scrapes UK property rental listings and uses OpenAI's gpt-5-nano to provide personalized property recommendations based on your requirements.
 
 ## What It Does
 
@@ -114,7 +114,7 @@ Install with: `pip install -r requirements.txt`
 ## Important Notes
 
 ### API Costs
-- Uses GPT-4o-mini model (very affordable - ~$0.001 per request)
+- Uses gpt-5-nano model (very affordable - ~$0.001 per request)
 - Monitor usage at: https://platform.openai.com/usage
 
 ### Rate Limits

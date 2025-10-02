@@ -96,7 +96,7 @@ def summarize(url: str) -> dict:
         try:
             formatted_prompt = f"{prompt} \n\nContent:\n{website.summarized_text()}"
             response = openai.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": "You are an expert at extracting structured information from website content."},
                     {"role": "user", "content": formatted_prompt}

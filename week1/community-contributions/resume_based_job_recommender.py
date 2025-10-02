@@ -52,7 +52,7 @@ class ResumeBasedJobRecommendation:
                 "content": f"Below is my resume content, kindly look for the appropriate job openings in \
                 {job_sites} for location {location}:\n{data}"
             }]
-        self.response = openai.chat.completions.create(model='gpt-4o-mini', messages=self.message)
+        self.response = openai.chat.completions.create(model='gpt-5-nano', messages=self.message)
         return self.response.choices[0].message.content
 
 

@@ -6,7 +6,7 @@ This project implements a conversational AI agent that can find and analyze flig
 
 - **Conversational Interface:** A user-friendly chat interface built with Gradio.
 - **Multi-Model Support:** Can be configured to use different Large Language Models (LLMs) for analysis, including:
-  - OpenAI (e.g., GPT-4o-mini)
+  - OpenAI (e.g., gpt-5-nano)
   - Google Gemini (e.g., Gemini 2.5 Flash)
   - Ollama (e.g., Llama 3.1)
 - **Tool-Based Architecture:** The agent uses a `get_ticket_price` tool to understand when the user is asking for flight information.

@@ -30,7 +30,7 @@ if google_api_key:
 else:
     print("Google Places API Key not set. Location search will be disabled.")
 
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-5-nano"
 openai = OpenAI()
 
 # Functions for RAG implementation

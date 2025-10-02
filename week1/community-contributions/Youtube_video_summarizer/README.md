@@ -1,14 +1,14 @@
 # YouTube Video Summarizer
 
-A Python tool that automatically fetches YouTube video transcripts and generates comprehensive summaries using OpenAI's GPT-4o-mini model. Features intelligent chunking for large videos and high-quality summarization.
+A Python tool that automatically fetches YouTube video transcripts and generates comprehensive summaries using OpenAI's gpt-5-nano model. Features intelligent chunking for large videos and high-quality summarization.
 
 ## Features
 
 - 🎬 **YouTube Integration**: Automatically fetches video transcripts
-- 🤖 **AI-Powered Summaries**: Uses GPT-4o-mini for high-quality summaries
+- 🤖 **AI-Powered Summaries**: Uses gpt-5-nano for high-quality summaries
 - 📊 **Smart Chunking**: Handles large videos by splitting into manageable chunks
 - 🔄 **Automatic Stitching**: Combines chunk summaries into cohesive final summaries
-- 💰 **Cost-Effective**: Optimized for GPT-4o-mini's token limits
+- 💰 **Cost-Effective**: Optimized for gpt-5-nano's token limits
 - 🛡️ **Error Handling**: Robust error handling with helpful messages
 
 ## Installation
@@ -117,7 +117,7 @@ summary = summarize_video(
 ## Configuration
 
 ### Model Settings
-- **Model**: GPT-4o-mini (cost-effective and high-quality)
+- **Model**: gpt-5-nano (cost-effective and high-quality)
 - **Temperature**: 0.3 (focused, consistent output)
 - **Max Tokens**: 2,000 (optimal for summaries)
 

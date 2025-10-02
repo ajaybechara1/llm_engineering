@@ -38,7 +38,7 @@ if openai_api_key:
 else:
     print("OpenAI API Key not set")
 
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-5-nano"
 openai = OpenAI()
 
 

@@ -109,7 +109,7 @@ if results:
         with st.spinner("Summarizing with LLM..."):
             try:
                 response = openai.chat.completions.create(
-                    model="gpt-4o-mini",
+                    model="gpt-5-nano",
                     messages=messages
                 )
                 summary = response.choices[0].message.content

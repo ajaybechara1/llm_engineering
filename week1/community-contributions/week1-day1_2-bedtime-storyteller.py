@@ -46,7 +46,7 @@ def main():
     if args.provider == "openai":
         load_openai_key()
         client = OpenAI()
-        model = "gpt-4o-mini"
+        model = "gpt-5-nano"
     elif args.provider == "ollama":
         client = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')
         model = args.model

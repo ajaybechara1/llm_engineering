@@ -462,7 +462,7 @@ class ShariaComplianceChecker:
             """
             
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-nano",
                 messages=[
                     {"role": "system", "content": "You are an expert in Islamic finance and Sharia compliance for investments."},
                     {"role": "user", "content": prompt}

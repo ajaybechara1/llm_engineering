@@ -175,7 +175,7 @@ The platform is built with a clean, modular architecture using separate tool mod
 
 ### AI Integration
 
-The platform leverages OpenAI's GPT-4o-mini with specialized prompts:
+The platform leverages OpenAI's gpt-5-nano with specialized prompts:
 
 #### Trading Analysis Prompts
 - **Senior Analyst Persona**: 15+ years institutional experience
@@ -314,7 +314,7 @@ This project is for educational purposes. Please ensure compliance with:
 ## 🙏 Acknowledgments
 
 - **yfinance** for providing free financial data API
-- **OpenAI** for GPT-4o-mini language model
+- **OpenAI** for gpt-5-nano language model
 - **Gradio** for the intuitive web interface framework
 - **Islamic finance scholars** for Sharia compliance frameworks
 

@@ -84,7 +84,7 @@ ai-summarizer/
    The summarizer supports multiple engines. Modify `main.py` to select your preferred model:
 
    ```python
-   summary = summarize_text(content, 'gpt-4o-mini', engine="openai")
+   summary = summarize_text(content, 'gpt-5-nano', engine="openai")
    summary = summarize_text(content, 'deepseek-r1:1.5B', engine="ollama-api")
    summary = summarize_text(content, 'deepseek-r1:1.5B', engine="ollama-lib")
    ```
@@ -95,7 +95,7 @@ You can modify the model, max tokens, and temperature in `summarizer/summarizer.
 
 ```python
 response = client.chat.completions.create(
-    model="gpt-4o-mini",
+    model="gpt-5-nano",
     messages=[...],
     max_tokens=300,
     temperature=0.7
